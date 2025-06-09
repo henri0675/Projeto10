@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1cacbf, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00796b;
+    border-bottom: 3px solid #004d40;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline-color: #00796b;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+#adicionarTarefa {
+    background-color: #00796b;
+}
+
+#adicionarTarefa:hover {
+    background-color: #004d40;
+}
+
+#removerTarefa {
+    background-color: #d32f2f;
+}
+
+#removerTarefa:hover {
+    background-color: #b71c1c;
+}
+
+/* Lista de tarefas */
+#lista {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #e0f2f1;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    min-height: 50px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #removerTarefa {
+        margin-top: 10px;
+    }
+}
