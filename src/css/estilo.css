@@ -109,3 +109,13 @@ button {
         margin-top: 10px;
     }
 }
+
+#salvarTarefa{
+    background: rgb(8, 148, 234);
+    margin-top: 20px;
+}
+
+#editarTarefa{
+    background:purple ;
+    
+}
